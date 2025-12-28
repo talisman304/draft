@@ -355,14 +355,15 @@ a:hover{ text-decoration-thickness: 2px; }
   align-items:start;
 }
 .about-photo{
-  min-height: 280px;
-  border-radius: var(--radius);
+  .about-photo-img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
   border: 1px solid rgba(255,255,255,0.14);
-  background:
-    radial-gradient(600px 220px at 50% 20%, rgba(125,211,252,0.25), transparent 60%),
-    linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
-  box-shadow: var(--shadow);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  object-fit: cover;
 }
+
 .pill-row{
   display:flex;
   flex-wrap:wrap;
